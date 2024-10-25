@@ -11,6 +11,7 @@ KERNEL_DEVICETREE ?= " \
     ti/omap/am335x-bonegreen.dtb \
     ti/omap/am335x-bonegreen-wireless.dtb \
     ti/omap/am335x-pocketbeagle.dtb \
+    ti/omap/bbb-gen4-4dcape70t.dtb \
 "
 
 LINUX_VERSION = "6.11"
@@ -26,4 +27,9 @@ SRC_URI = " \
     file://defconfig \
     file://0001-kbuild-remove-dependency-on-truncate.patch \
     file://0002-Remove-i2c2-cape-dts-config.patch \
+    file://bbb-gen4-4dcape70t.dts \
 "
+
+do_configure:prepend() {
+    cp ${WORKDIR}/*.dts ${S}/arch/arm/boot/dts/ti/omap
+}
