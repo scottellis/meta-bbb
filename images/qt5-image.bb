@@ -31,7 +31,7 @@ IMAGE_INSTALL += " \
     ${FONTS} \
     ${QT_TOOLS} \
     ${TSLIB} \
-    tspress \
+    tspress-tools \
 "
 
 export IMAGE_BASENAME = "qt5-image"
