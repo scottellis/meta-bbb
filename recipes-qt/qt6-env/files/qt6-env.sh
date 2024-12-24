@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export PATH=${PATH}:/usr/bin/qt5
+export PATH=${PATH}:/usr/bin/qt6
 
 export QT_QPA_PLATFORM=linuxfb
 

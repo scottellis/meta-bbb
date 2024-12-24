@@ -5,12 +5,14 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 DEPENDS += "qtbase"
 
-SRCREV = "056eadc053000a3d6a4f9c0a1961ceb07d18cf3d"
-SRC_URI = "git://github.com/scottellis/tspress.git;protocol=https;branch=qt5"
+inherit qt6-qmake
 
-S = "${WORKDIR}/git"
+SRCREV = "acf035f67299016516d927ef640725a003498aba"
+SRC_URI = "git://github.com/scottellis/tspress.git;protocol=https;branch=master"
 
-require recipes-qt/qt5/qt5.inc
+S = "${UNPACKDIR}/git"
+
+require recipes-qt/qt6/qt6.inc
 
 do_install() {
     install -d ${D}${bindir}

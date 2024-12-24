@@ -1,4 +1,4 @@
-SUMMARY = "A Qt5 development image"
+SUMMARY = "A Qt6 development image"
 HOMEPAGE = "http://www.jumpnowtek.com"
 
 require console-image.bb
@@ -12,7 +12,7 @@ QT_DEV_TOOLS = " \
 QT_TOOLS = " \
     qtbase \
     qtbase-plugins \
-    qt5-env \
+    qt6-env \
 "
 
 FONTS = " \

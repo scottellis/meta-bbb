@@ -14,7 +14,7 @@ SRC_URI = "\
     file://cylon.sh \
 "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 SYSTEMD_AUTO_ENABLE = "enable"
 SYSTEMD_SERVICE:${PN} = "emmc-installer.service"

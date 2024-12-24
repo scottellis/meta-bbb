@@ -13,7 +13,7 @@ SRC_URI = " \
     file://emmc-boot.cmd \
 "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 KERNEL_DTB ?= "am335x-boneblack.dtb"
 

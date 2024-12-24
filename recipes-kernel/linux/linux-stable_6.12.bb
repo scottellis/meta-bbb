@@ -18,7 +18,7 @@ LINUX_VERSION = "6.12"
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/linux-stable-${LINUX_VERSION}:${THISDIR}/linux-stable-${LINUX_VERSION}/dts:"
 
-S = "${WORKDIR}/git"
+S = "${UNPACKDIR}/git"
 
 PV = "6.12.6"
 SRCREV = "e9d65b48ce1aba50e9ec7eab6d9f73d1ba88420e"
@@ -29,5 +29,5 @@ SRC_URI = " \
 "
 
 do_configure:prepend() {
-    cp ${WORKDIR}/*.dts ${S}/arch/arm/boot/dts/ti/omap
+    cp ${UNPACKDIR}/*.dts ${S}/arch/arm/boot/dts/ti/omap
 }
