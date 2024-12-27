@@ -8,5 +8,5 @@ Common targets are:
     console-image
     console-dev-image
     emmc-installer-image
-    qt5-image
+    qt6-image
 
